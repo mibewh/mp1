@@ -2,12 +2,87 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 
-h1 {
-  font-size: 2.2rem;
-  color: lighten($orange, 25);
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 25pt;
+	font-family: $font-primary;
+	nav {
+		@include bar;
+		position: fixed;	
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			display: inline-block;
+			width: 150px;
+			float: right;
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
+		#title {
+			float: left;
+			margin-left: 75px;
+			font-weight: bold;
+			width: 250px;
+		}
+	}
+	main {
+		padding-top: 72px;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		#intro {
+			@include fadeIn(2s);
+			@include scaleBackground("../media/doge-bg.jpg");
+			background-image: url("../media/doge-bg.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			height: 500px;
+			@include centerOuter;
+			#description {
+				@include centerInner;
+				h2 {
+					font-size: 50pt;
+					color: red;
+				}
+				h1 {
+					font-size: 75pt;
+					color: cyan;
+					
+				}	
+			}
+		}
+		#video {
+			h1 {
+				padding: .5em;
+			}
+		}
+		#tricolumn {
+			margin-top: 30px;
+			.column {
+				width: 33.3333%;
+				display: inline-block;
+				float: left;
+				height: 300px;
+			}
+		}
+	}
+
+	footer {
+		@include bar;
+		color: black;
+		display: inline-block;
+		text-align: center;
+	    bottom: 0;
+	    padding-top: 1em;
+	    padding-bottom: 1em;
+	}
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
-}
+

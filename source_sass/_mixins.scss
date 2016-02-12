@@ -1,0 +1,45 @@
+@mixin bar {
+	background: $bar-color;
+	display: block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	width: 100%;
+	float: left;
+}
+
+@mixin centerOuter {
+	width: 100%;
+	display: table;
+}
+
+@mixin centerInner {
+	display: table-cell;
+	vertical-align: middle; 
+}
+
+@mixin scaleBackground($bg) {
+	background-image: url($bg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin fadeIn($time) {
+	@-webkit-keyframes fade { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fade { from { opacity:0; } to { opacity:1; } }
+	@keyframes fade { from { opacity:0; } to { opacity:1; } }
+
+    opacity:0;
+    //Animation set
+	-webkit-animation: fade ease-in 1;
+	-moz-animation: fade ease-in 1;
+	animation: fade ease-in 1;
+	//Set duration
+	-webkit-animation-duration: $time;
+	-moz-animation-duration: $time;
+	animation-duration: $time;
+	//Ensure animation runs
+	-webkit-animation-fill-mode: forwards; 
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+ 
+}
