@@ -10,7 +10,7 @@ body {
 	nav {
 		@include bar;
 		position: fixed;	
-
+		z-index: 1;
 		ul {
 			list-style-type: none;
 		}
@@ -39,9 +39,6 @@ body {
 		#intro {
 			@include fadeIn(2s);
 			@include scaleBackground("../media/doge-bg.jpg");
-			background-image: url("../media/doge-bg.jpg");
-			background-repeat: no-repeat;
-			background-size: cover;
 			background-attachment: fixed;
 			height: 500px;
 			@include centerOuter;
@@ -65,11 +62,24 @@ body {
 		}
 		#tricolumn {
 			margin-top: 30px;
+			font-size: 40pt;
+			color: DodgerBlue;
 			.column {
 				width: 33.3333%;
 				display: inline-block;
 				float: left;
-				height: 300px;
+				height: 100px;
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+			#column1 {
+				@include scaleBackground("../media/many-doge.png");
+			}
+			#column2 {
+				@include scaleBackground("../media/laugh-doge.jpg");
+			}
+			#column3 {
+				@include scaleBackground("../media/computer-doge2.png");
 			}
 		}
 	}
