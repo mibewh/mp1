@@ -51,17 +51,27 @@ body {
 				h1 {
 					font-size: 75pt;
 					color: cyan;
-					
+					margin-bottom: 10px;
 				}	
 			}
 		}
+		#modal {
+			display: none;
+			z-index: 2;
+			text-align: center;
+			background-color: $bg-color;
+			overflow: auto;
+			position: fixed;
+			width: 60%;
+		}
 		#video {
+			background-color: $bg-color;
+			padding-bottom: 30px;
 			h1 {
 				padding: .5em;
 			}
 		}
 		#tricolumn {
-			margin-top: 30px;
 			font-size: 40pt;
 			color: DodgerBlue;
 			.column {
@@ -95,4 +105,18 @@ body {
 	}
 }
 
-
+.button {
+	display: inline-block;
+	background-color: green;
+	color: white;
+	font-size: 16pt;
+	padding: 10px;
+	border: none;
+	text-decoration: none;
+	&:hover {
+		background-color: limegreen;
+	}
+	&:focus {
+		outline: none;
+	}
+}

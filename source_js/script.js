@@ -1,16 +1,7 @@
-var divs = document.getElementsByTagName('div');
-for(var i=0; i<divs.length; i++) {
-  divs[i].addEventListener("click", highlightThis);
-  /*
-  divs[i].addEventListener("click", highlightThis, true);
-  divs[i].addEventListener("click", highlightThis, false);*/
-}
+$(document).ready(function() {
 
-function highlightThis(event) {
-    //event.stopPropagation();
+	$('#modalButton').click(function() {
+		$('#modal').show();
+	});
 
-    var backgroundColor = this.style.backgroundColor;
-    this.style.backgroundColor='yellow';
-    alert(this.className);
-    this.style.backgroundColor=backgroundColor;
-}
+});
