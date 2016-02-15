@@ -122,13 +122,13 @@ body {
 				}
 			}
 			#column1 {
-				@include scaleBackground("/media/many-doge.png");
+				@include scaleBackground("../media/many-doge.png");
 			}
 			#column2 {
-				@include scaleBackground("/media/laugh-doge.jpg");
+				@include scaleBackground("../media/laugh-doge.jpg");
 			}
 			#column3 {
-				@include scaleBackground("/media/computer-doge2.png");
+				@include scaleBackground("../media/computer-doge2.png");
 			}
 		}
 		#carousel {
