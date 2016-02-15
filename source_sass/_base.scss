@@ -17,11 +17,15 @@ body {
 
 		li {
 			display: inline-block;
-			width: 150px;
 			float: right;
-			a {
+			padding: 20px;
+			cursor: pointer;
+			&.navopt {
 				color: white;
 				text-decoration: none;
+			}
+			&.active {
+				background-color: $bar-select-color;
 			}
 		}
 		#title {
@@ -91,6 +95,7 @@ body {
 		}
 		#tricolumn {
 			font-size: 40pt;
+			width: 100%;
 			color: DodgerBlue;
 			.column {
 				width: 33.3333%;
@@ -116,7 +121,8 @@ body {
 		#carousel {
 			display: inline-block;
 			width: 100%;
-			padding: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
 			background-color: $bg-color;
 			h1 {
 				font-size: 30pt;
@@ -136,8 +142,8 @@ body {
 				li {
 					display: none;
 					float: center;
-					width: 700px;
-					height: 500px;
+					width: 900px;
+					height: 700px;
 					&.disp {
 						display: inline-block;
 					}

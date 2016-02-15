@@ -1,8 +1,6 @@
 @mixin bar {
 	background: $bar-color;
 	display: block;
-	padding-bottom: 20px;
-	padding-top: 20px;
 	width: 100%;
 	float: left;
 }
