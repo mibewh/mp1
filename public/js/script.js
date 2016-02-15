@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#modalButton").click(function(){$("#modal").show()})});
+$(document).ready(function(){$("#modalButton").click(function(){$("#modal-state").show()}),$("#x").click(function(){$("#modal-state").hide()});var a=$("#images").children(),b=0;$("#left").click(function(){a.eq(b).removeClass("disp"),b-=1,0>b&&(b=a.length-1),a.eq(b).addClass("disp")}),$("#right").click(function(){a.eq(b).removeClass("disp"),b+=1,b>=a.length&&(b=0),a.eq(b).addClass("disp")})});

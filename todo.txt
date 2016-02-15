@@ -1,12 +1,8 @@
 Position Indicator: Indicator of the current reading position visible in the navigation bar (see above gif for example). Make sure your implementation highlights the last menu item when you scroll to the bottom of the page. ( Implementation Tip : To figure out which menu item to highlight, you'll have to figure out which section lies directly below the bottom margin of the navigation bar. You can use methods that give you the height and position of different divs to figure that out. You will want to recompute this whenever there is a scroll event.)
 Navbar Resizing: Navigation bar must be larger when users are at the top of the page. As users start scrolling down, it should resize and become smaller - Example
 Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar Example
-Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - Example
-At least one use of scalable vector icons through CSS (e.g. FontAwesome)
 Extra Credit: create a original favicon for your page. The best favicon will be used for the class webpage.
 
-Modal: A section which uses modal windows with additional content - Example
-	IN PROGRESS
 
 Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - Example
 	DONE
@@ -23,4 +19,10 @@ CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transiti
 Multi-column layout: A section with Multi-column content - Example
 	DONE
 Inclusion of social media icons
+	DONE
+Modal: A section which uses modal windows with additional content - Example
+	DONE
+Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - Example
+	DONE
+At least one use of scalable vector icons through CSS (e.g. FontAwesome)
 	DONE

@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <title>Doge Fan Club</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
@@ -30,12 +31,18 @@
         <button id="modalButton" class="button">Learn more</button>
       </div>
     </section>
-    <section id="modal">
-      Modal text
+    <section id="modal-state">
+      <div id="info">
+        <span id="x">x</span>
+        <p>Doge is a slang term for “dog” that is primarily associated with pictures of Shiba Inus (nicknamed “Shibe”) and internal monologue captions on Tumblr. These photos may be photoshopped to change the dog’s face or captioned with interior monologues in Comic Sans font.</p>
+        <p>The use of the misspelled word “doge” to refer to a dog dates back to June 24th, 2005, when it was mentioned in an episode of Homestar Runner’s puppet show. In the episode titled “Biz Cas Fri 1”, Homestar calls Strong Bad his “d-o-g-e” while trying to distract him from his work.</p>
+        <p>On February 23rd, 2010, Japanese kindergarten teacher Atsuko Sato posted several photos of her rescue-adopted Shiba Inu dog Kabosu to her personal blog. Among the photos included a peculiar shot of Kabosu sitting on a couch while glaring sideways at the camera with raised eyebrows (shown below, right). In December 2013, shortly after the breakout of “Doge,” the tech news site The Verge published an article identifying Sato’s Kabosu as the original Shiba Inu depicted in the meme. In addition to Kabosu, The Verge also identified “Suki,” a Shiba Inu who lives with San Francisco-based photographer Jonathan Fleming, as the scarfed dog portrayed in another popular instance of the meme.</p>
+        <p><a href="http://knowyourmeme.com/memes/doge">Know Your Meme</a></p>
+      </div>
     </section>
     <section id="video">
       <h1>Doge in Action</h1>
-      <video width=640 height=360 controls>
+      <video width=768 height=432 controls>
         <source src="../media/video.mp4" type="video/mp4">
       </video>
     </section>
@@ -61,6 +68,16 @@
           <image src="../media/social/twitter.png">
         </a>
       </div>
+    </section>
+    <section id="carousel">
+      <h1>Meet the Doges</h1>
+      <i id="left" class="fa fa-arrow-left"></i>
+      <ul id="images">
+        <li id="el1" class="disp"></li>
+        <li id="el2"></li>
+        <li id="el3"></li>
+      </ul>
+      <i id="right" class="fa fa-arrow-right"></i>
     </section>
   </main>
   <footer>
