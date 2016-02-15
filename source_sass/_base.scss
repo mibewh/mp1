@@ -13,13 +13,24 @@ body {
 		z-index: 3;
 		ul {
 			list-style-type: none;
+			// height: 100px;
+			#favicon {
+				float: left;
+				display: inline-block;
+				width: 64px;
+				height: 64px;
+				// padding: 20px;
+				padding-left: 25px;
+				padding-top: 25px;
+			}
 		}
-
+		
 		li {
 			display: inline-block;
 			float: right;
-			padding: 20px;
+			padding: 40px;
 			cursor: pointer;
+			height: 100%;
 			&.navopt {
 				color: white;
 				text-decoration: none;
@@ -27,20 +38,22 @@ body {
 			&.active {
 				background-color: $bar-select-color;
 			}
-		}
-		#title {
-			float: left;
-			margin-left: 75px;
-			font-weight: bold;
-			width: 250px;
+			&#title {
+				float: left;
+				// margin-left: 75px;
+				font-weight: bold;
+				cursor: auto;
+			}
+
 		}
 	}
 	main {
-		padding-top: 72px;
+		// padding-top: 112px;
 		display: inline-block;
 		text-align: center;
 		width: 100%;
 		#intro {
+			padding-top: 72px;
 			@include fadeIn(2s);
 			@include scaleBackground("../media/doge-bg.jpg");
 			background-attachment: fixed;

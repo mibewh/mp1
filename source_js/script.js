@@ -58,8 +58,8 @@ $(document).ready(function() {
 		elem.addClass('active');
 	}
 	var setNav = function() {
+
 		var navPos = $(window).scrollTop();
-		// var navPos = $('#main').offset();
 		if(navPos < videoPos) {
 			setActive($('#home'));
 		}
@@ -73,15 +73,39 @@ $(document).ready(function() {
 			setActive($('#crew'));
 		}
 		//Check bottom
-		console.log((navPos+$(window).height()) + "," + $(document).height());
 		if(navPos + $(window).height() >= $(document).height()-5) {
-			// alert('rock BOTTOM');
 			setActive($('#crew'));
 		}
 	}
+	//Expand/shrink navbar
+	var setBarSize = function() {
+		var pos = $(window).scrollTop();
+		if(pos >= 100) { //Smaller bar
+			$('nav li').stop().animate({
+				padding: '20px'
+			}, {duration: 50, queue: false});
+			console.log('here');
+			$('#favicon').stop().animate({
+				padding: '3px'
+			}, {duration: 50, queue: false});
+		}
+		else { //Larger Bar
+			$('nav li').stop().animate({
+				padding: '40px'
+			}, {duration: 50, queue: false});
+			$('#favicon').stop().animate({
+				padding: '24px'
+			}, {duration: 50, queue: false});
+		}
+	}
+
 	$(document).scroll(function() {
 		setNav();
+		setBarSize();
 	});
+	// set the active nav element  and bar size at the beginning
 	setNav();
-	//Expand/shrink navbar
+	setBarSize();
+
+
 });
