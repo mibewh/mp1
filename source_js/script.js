@@ -34,22 +34,22 @@ $(document).ready(function() {
 	//Clicking nav link
 	$('#home').click(function() {
 		$('html, body').animate({
-			scrollTop: introPos
+			scrollTop: introPos + 1
 		}, 750);
 	});
 	$('#action').click(function() {
 		$('html, body').animate({
-			scrollTop: videoPos
+			scrollTop: videoPos + 1
 		}, 750);
 	});
 	$('#process').click(function() {
 		$('html, body').animate({
-			scrollTop: tricolumnPos
+			scrollTop: tricolumnPos + 1
 		}, 750);
 	});
 	$('#crew').click(function() {
 		$('html, body').animate({
-			scrollTop: carouselPos
+			scrollTop: carouselPos + 1
 		}, 750);
 	});
 	//Position indicator
